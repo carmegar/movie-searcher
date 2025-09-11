@@ -31,8 +31,8 @@ Una aplicación moderna de búsqueda de películas construida con React, Vite y 
 
 1. Clona el repositorio
 ```bash
-git clone <repository-url>
-cd 01-movie-search
+git clone https://github.com/carmegar/movie-searcher.git
+cd movie-searcher
 ```
 
 2. Instala dependencias
