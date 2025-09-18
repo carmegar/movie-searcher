@@ -1,21 +1,10 @@
 {
-  "name": "movie-search-app",
-  "version": 2,
-  "builds": [
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
     {
-      "src": "dist/**",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "VITE_TMDB_API_KEY": "@vite_tmdb_api_key",
-    "VITE_TMDB_BASE_URL": "@vite_tmdb_base_url",
-    "VITE_TMDB_IMAGE_BASE_URL": "@vite_tmdb_image_base_url"
-  }
+  ]
 }
